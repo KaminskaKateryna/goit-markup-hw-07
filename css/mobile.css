@@ -20,5 +20,24 @@
   .customers-item{
     width: calc((100% - 30px) / 2);
   }
-  
+  .hero> .container{
+    /* display: flex; */
+    padding: 0;
+    width: 100%;
+  }
+  .hero{
+    padding: 112px 55px;
+    background: var(--dark-background-color);
+    background-image: var(--bg-gradient), url(../images/Dark-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+      .hero {
+        background-image: var(--bg-gradient), url(../images/Dark-bg-mob-2.jpg);
+
+      }
   }

@@ -75,14 +75,18 @@ img {
   text-decoration: none;
 }
 .logo {
-  margin-right: 93px;
+  /* margin-right: 76px; */
 }
 .logo-black-color {
   color: var(--logo-text-color);
 }
-.header-list {
-  gap: 40px;
-  list-style: none;
+.header-list,
+.header-mail,
+.header-tel {
+  display: none;
+  /* gap: 40px;
+  display: none;
+  list-style: none; */
 }
 .header-item {
 }
@@ -149,7 +153,7 @@ img {
 }  */
 .header-mail,
 .header-tel {
-  display: block;
+  /* display: block;
   padding-top: 24px;
   padding-bottom: 24px;
   font-size: 16px;
@@ -157,7 +161,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .header-mail:hover,
 .header-mail:focus,
@@ -167,27 +171,35 @@ img {
 }
 .hero {
   background: var(--dark-background-color);
-  background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
+  background-image: var(--bg-gradient), url(../images/Dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 112px 0;
+  flex-grow: 1;
   text-align: center;
-  max-width: 1440px;
+  min-width: 428px;
   
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+      .hero {
+        background-image: var(--bg-gradient), url(../images/Dark-bg-mob-2.jpg);
+
+      }
 
 .hero-title {
-  width: 494px;
+  width: 312px;
+  
   font-weight: 500;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
-  margin-bottom: 40px;
+  /* letter-spacing: 0.02em; */
+  margin-bottom: 72px;
   margin-right: auto;
   margin-left: auto;
 
@@ -317,7 +329,10 @@ img {
 .name-card-text {
   padding-top: 32px;
   padding-bottom: 32px;
+  
+   
 }
+
 
 .name-card {
   font-weight: 500;
@@ -497,6 +512,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  
 }
 .team-soc-item {
   width: 40px;
