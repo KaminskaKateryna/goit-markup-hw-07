@@ -1,0 +1,24 @@
+@media screen and (min-width:480px) {
+    .container {
+     width: 458px;
+    }
+  .team-cards {
+    gap: 72px;
+    }
+  
+  
+  .section-employees> .container{
+    width: 264px;
+  }
+  .section-customers{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.section-customers> .container{
+    width: 426px;
+}
+  .customers-item{
+    width: calc((100% - 30px) / 2);
+  }
+  
+  }

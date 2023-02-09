@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  
+    .section-employees {
+      padding-top: 96px;
+      padding-bottom: 104px;
+    }
+    .section-employees> .container{
+        width: 582px;
+      }
+    .team-title {
+      margin-bottom: 72px;
+    }
+    .team-cards {
+      row-gap: 64px;
+      column-gap: 24px;
+    }
+    .team-item {
+      width: calc((100% - 30px) / 2);
+    }
+    .section-customers{
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+    .section-customers> .container{
+        width: 582px;
+    }
+    .customers-item{
+      width: calc((100% - 60px) / 3);
+    }
+  }
