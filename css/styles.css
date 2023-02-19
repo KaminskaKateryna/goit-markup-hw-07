@@ -36,13 +36,12 @@ body {
 }
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
   width: 100%;
+  height: auto;
 }
 
 .container {
-  /* width: 1158px; */
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -75,18 +74,14 @@ img {
   text-decoration: none;
 }
 .logo {
-  /* margin-right: 76px; */
+  margin-right: 93px;
 }
 .logo-black-color {
   color: var(--logo-text-color);
 }
-.header-list,
-.header-mail,
-.header-tel {
-  display: none;
-  /* gap: 40px;
-  display: none;
-  list-style: none; */
+.header-list {
+  gap: 40px;
+  list-style: none;
 }
 .header-item {
 }
@@ -153,7 +148,7 @@ img {
 }  */
 .header-mail,
 .header-tel {
-  /* display: block;
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
   font-size: 16px;
@@ -161,7 +156,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover,
 .header-mail:focus,
@@ -171,35 +166,26 @@ img {
 }
 .hero {
   background: var(--dark-background-color);
-  background-image: var(--bg-gradient), url(../images/Dark-bg-mob.jpg);
+  background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  padding: 112px 0;
-  flex-grow: 1;
+  padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
-  min-width: 428px;
-  
+  max-width: 1440px;
   margin: 0 auto;
 }
-@media (min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-      .hero {
-        background-image: var(--bg-gradient), url(../images/Dark-bg-mob-2.jpg);
-
-      }
 
 .hero-title {
-  width: 312px;
-  
+  width: 494px;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 1.11;
+  font-size: 56px;
+  line-height: 1.07;
   text-align: center;
-  /* letter-spacing: 0.02em; */
-  margin-bottom: 72px;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
 
@@ -285,17 +271,13 @@ img {
 }
 .heading-images {
   display: flex;
-  /* flex-wrap: wrap; */
   list-style: none;
   gap: 24px;
 }
-.heading-item {
-  width: calc((100% - 30px) / 3);
-}
 .section-employees {
   background-color: var(--light-background-color);
-  padding-top: 96px;
-  padding-bottom: 128px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   font-weight: 700;
@@ -310,11 +292,7 @@ img {
 }
 
 .team-cards {
-  display: flex;
-  flex-wrap: wrap;
   gap: 24px;
-  align-items: center;
-  justify-content: center;
   list-style: none;
 }
 .team-item {
@@ -322,17 +300,13 @@ img {
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background: var(--focus-text-color);
-  width: 100%;
-  /* width: calc((100% - 48px) / 3); */
+  width: calc((100% - 48px) / 3);
 }
 
 .name-card-text {
   padding-top: 32px;
   padding-bottom: 32px;
-  
-   
 }
-
 
 .name-card {
   font-weight: 500;
@@ -356,8 +330,8 @@ img {
 }
 .footer {
   background: var(--dark-background-color);
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   display: inline-block;
@@ -512,7 +486,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  
 }
 .team-soc-item {
   width: 40px;
@@ -537,20 +510,15 @@ img {
   fill: #f4f4fd;
 }
 .section-customers {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 .customers-list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 72px;
-  column-gap: 16px;
-  align-items: center;
-  justify-content: center;
+  gap: 24px;
 }
 .customers-item {
-  width: calc((100% - 30px) / 2);
-  /* width: calc((100% - 120px) / 6); */
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 .customers-link {
@@ -599,10 +567,6 @@ img {
 .footer-box {
   display: flex;
   flex-grow: 1;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 72px;
 }
 
 .footer-section {
@@ -748,7 +712,7 @@ img {
   letter-spacing: 0.02em;
 
   color: #2e2f42;
-
+  
   margin-bottom: 16px;
 }
 
