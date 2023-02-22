@@ -64,7 +64,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container{
       max-width: 1158px;
   }
@@ -214,7 +214,7 @@ img {
 }
 
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
 .hero{
   background-image:var(--bg-gradient), url(../images/hero-bg.jpg);
 }
@@ -318,7 +318,7 @@ img {
   display: none;
   padding: 120px 0;
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
   .section-heading{
     display: block;
   }
@@ -350,7 +350,7 @@ img {
     padding-bottom: 104px;
   }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
   .section-employees{
     padding-top: 120px;
   padding-bottom: 120px;
@@ -393,7 +393,7 @@ img {
   }
   .team-item{width: calc((100% - 48px) / 2);}
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
   .team-item{
     width: calc((100% - 72px) / 4);
   }
@@ -637,7 +637,7 @@ img {
   column-gap: 24px;
 }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px){
   .section-customers{
     padding-top: 120px;
   padding-bottom: 120px;
