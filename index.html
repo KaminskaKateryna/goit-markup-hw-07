@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./css/tablet.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header-navigation">
           <a class="logo" href="./index.html">Web<span class="logo-black-color">studio</span></a>
@@ -41,7 +41,7 @@
           </ul>
         </nav>
 
-        <ul class="header-list">
+        <ul class="header-list contacts">
           <li>
             <a
               class="header-mail"
@@ -54,8 +54,80 @@
             <a class="header-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/symbol-defs.svg#icon-hamburger-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+        <button type="button" class="menu-close" data-menu-close>
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mob-navigation">
+        <ul class="mob-menu-list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link  studio" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link mob-active" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mob-menu-list mob-contacts">
+        <li>
+          <a class="mob-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a
+            class="mob-menu-mail"
+            href="mailto:info@devstudio.com
+          "
+            >info@devstudio.com</a
+          >
+        </li>
+        
+      </ul>
+      <ul class="mob-soc-list list">
+        <li class="mob-soc-item">
+          <a href="" class="mob-soc-link">
+            <svg class="mob-soc-icon" width="16" height="16">
+              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-soc-item">
+          <a href="" class="mob-soc-link">
+            <svg class="mob-soc-icon" width="16" height="16">
+              <use href="./images/symbol-defs.svg#icon-twitter-1-2-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-soc-item">
+          <a href="" class="mob-soc-link">
+            <svg class="mob-soc-icon" width="16" height="16">
+              <use href="./images/symbol-defs.svg#icon-facebook-1-2-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-soc-item">
+          <a href="" class="mob-soc-link">
+            <svg class="mob-soc-icon" width="16" height="16">
+              <use href="./images/symbol-defs.svg#icon-linkedin-1-2-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+      </div>
+    </header> 
     <main>
       <section class="hero">
         <div class="container">
@@ -63,7 +135,7 @@
           <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
-      <!-- <section class="section">
+       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="benefits-content-container">
@@ -118,7 +190,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="section-heading">
         <div class="container">
           <h2 class="heading">What are we doing</h2>
@@ -364,16 +436,16 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+     <footer class="footer">
       <div class="footer-box container">
-        <div class="container footer-section">
+        <div class=" footer-section">
           <a class="footer-logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with digital marketing &
             growth solutions.
           </p>
         </div>
-        <div class="container footer-soc-section">
+        <div class=" footer-soc-section">
           <p class="footer-soc">Social media</p>
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
@@ -406,7 +478,7 @@
             </li>
           </ul>
         </div>
-        <div class="container footer-subscribe">
+        <div class=" footer-subscribe">
           <p class="subscribe-title">Subscribe</p>
           <form class="footer-form">
             
@@ -428,7 +500,7 @@
           </form>
         </div>
       </div>
-    </footer>  -->
+    </footer>  
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -517,5 +589,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    
   </body>
 </html>
